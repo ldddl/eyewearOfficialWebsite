@@ -1,4 +1,4 @@
-.banner{
+.banner {
   background: url(/assets/images/home-header.png) center / cover;
   padding-top: 296px;
   padding-bottom: 296px;
@@ -7,15 +7,15 @@
   align-items: end;
   text-align: right;
   color: $Secondary;
-  h2{
+  h2 {
     font-size: 36px;
   }
-  h1{
+  h1 {
     font-size: 64px;
     font-weight: 700;
     margin-bottom: 4px;
   }
-  a{
+  a {
     color: $white;
     font-size: 20px;
     font-weight: 500;
@@ -23,139 +23,203 @@
     padding: 6px 12px;
   }
 }
-.banner-a{
+.banner-a {
   width: 104px;
   text-align: right;
 }
-.professionalServices{
+.professionalServices {
   padding-top: 80px;
   padding-bottom: 80px;
-  background-color: #FBF2F2;
+  background-color: #fbf2f2;
   text-align: center;
-  h2{
+  h2 {
     color: $Secondary;
     font-weight: 700;
     font-size: 48px;
     margin-bottom: 24px;
   }
-  ul{
+  ul {
     display: flex;
     justify-content: space-between;
   }
-  li{
+  li {
     width: 306px;
   }
-  img{
+  img {
     width: 100px;
     margin-bottom: 24px;
   }
-  h3{
+  h3 {
     font-size: 24px;
     font-weight: 700;
     color: $Secondary;
     margin-bottom: 8px;
   }
-  p{
+  p {
     text-align: left;
   }
 }
-.classicSeries{
+.classicSeries {
   padding-top: 80px;
   padding-bottom: 80px;
   text-align: center;
-  ul{
+  ul {
     display: flex;
     justify-content: space-between;
   }
-  h2{
+  h2 {
     color: $Secondary;
     font-size: 48px;
     margin-bottom: 48px;
     font-weight: 700;
   }
-  img{
+  img {
     width: 416px;
     margin-bottom: 8px;
   }
-  h3{
+  h3 {
     font-size: 48px;
     color: $primary;
     font-weight: 900;
     font-style: italic;
   }
 }
+.customerRecommendations {
+  background: url(/assets/images/index-bg.png) center / cover;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+  color: $white;
+  h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 48px;
+  }
+  h3 {
+    font-size: 48px;
+    color: $primary;
+    font-weight: 900;
+    font-style: italic;
+    background-color: $white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  ul {
+    display: flex;
+  }
+  img {
+    width: 100%;
+    height: 240px;
+  }
+  li {
+    width: 100%;
+  }
+  .home-section1 {
+    background: url(/assets/images/home-section4-1.png) center / cover;
+    height: 240px;
+  }
+  .home-section2 {
+    background: url(/assets/images/home-section4-2.png) center / cover;
+    height: 240px;
+  }
+}
 
-@media (max-width:768px) {
-  .banner{
+@media (max-width: 768px) {
+  .banner {
     padding: 296px 37px;
     background: url(/assets/images/home-header-sm.png) center / cover;
   }
-  .professionalServices{
+  .professionalServices {
     padding: 80px 36px;
-    ul{
+    ul {
       flex-wrap: wrap;
     }
-    li{
+    li {
       width: 336px;
     }
-    li:nth-child(1),li:nth-child(2){
+    li:nth-child(1),
+    li:nth-child(2) {
       margin-bottom: 24px;
     }
-    img{
+    img {
       margin-bottom: 16px;
     }
   }
-  .classicSeries{
-    ul{
+  .classicSeries {
+    ul {
       flex-direction: column;
     }
-    img{
+    img {
       width: 336px;
       margin-bottom: 8px;
     }
-    li{
+    li {
       margin-bottom: 24px;
     }
-    li:nth-child(3){
+    li:nth-child(3) {
       margin-bottom: 0;
+    }
+  }
+  .customerRecommendations {
+    padding: 80px 36px;
+    ul {
+      flex-direction: column;
+    }
+    li:nth-child(1) {
+      margin-bottom: 24px;
     }
   }
 }
 
-@media (max-width:376px) {
-  .banner{
+@media (max-width: 376px) {
+  .banner {
     padding: 144px 14px;
-  h2{
-    font-size: 16px;
-  }
-  h1{
-    font-size: 24px;
-    margin-bottom: 8px;
-  }
-  a{
-    color: $white;
-    padding: 6px 12px 5px 12px;
-  }
-  }
-  .professionalServices{
-    padding: 40px 14px;
-    h2{
-       font-size: 24px;
+    h2 {
+      font-size: 16px;
     }
-    li:nth-child(3){
+    h1 {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+    a {
+      color: $white;
+      padding: 6px 12px 5px 12px;
+    }
+  }
+  .professionalServices {
+    padding: 40px 14px;
+    h2 {
+      font-size: 24px;
+    }
+    li:nth-child(3) {
       margin-bottom: 24px;
     }
   }
-  .classicSeries{
+  .classicSeries {
     padding-top: 40px;
     padding-bottom: 40px;
-    h2{
+    h2 {
       font-size: 24px;
       margin-bottom: 24px;
     }
-    img{
+    img {
       width: 348px;
       margin-bottom: 8px;
     }
-  }  
+  }
+  .customerRecommendations {
+    padding: 40px 14px;
+    h2 {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+    .home-section1 {
+      background: url(/assets/images/home-section4-1-sm.png) center / cover;
+      height: 240px;
+    }
+    .home-section2 {
+      background: url(/assets/images/home-section4-2-sm.png) center / cover;
+      height: 240px;
+    }
+  }
 }
