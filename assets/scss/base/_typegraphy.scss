@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Noto Sans TC', 'Roboto', sans-serif;
   line-height: 1.5;
 }
 img {
@@ -17,3 +17,6 @@ a {
   max-width: 1296px;
   margin: 0 auto;
 }
+$primary:#AA0601;
+$Secondary:#650300;
+$white:#fff;

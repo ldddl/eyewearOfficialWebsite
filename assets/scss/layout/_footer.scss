@@ -1,13 +1,13 @@
 footer{
-  background-color: #AA0601;
+  background-color: $primary;
   padding-top: 48px;
   padding-bottom: 32px;
   a{
-    color: #fff;
+    color: $white;
   }
 }
 .footer-top{
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid $white;
   margin-bottom: 36px;
 }
 .top-left{
@@ -50,7 +50,7 @@ footer{
   justify-content: space-between;
   align-items: center;
   p{
-    color: #fff;
+    color: $white;
   }
 }
 .bottom-ul{
@@ -64,6 +64,11 @@ footer{
 }
 
 @media (max-width:768px) {
+footer{
+  padding-bottom: 40px;
+  padding-right: 36px;
+  padding-left: 36px;
+}
 .top-right{
   img{
     width: 40px;

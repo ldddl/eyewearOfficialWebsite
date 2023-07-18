@@ -1,14 +1,14 @@
 header{
   display: flex;
   justify-content: space-between;
-  background-color: #AA0601;
+  background-color: $primary;
   align-items: center;
   padding-top: 12px;
   padding-bottom: 12px;
 }
-.header-img{
-  max-width: 80px;
-  max-height: 49px;
+.header-img img{
+  width: 80px;
+  height: 48px;
 }
 .header-ul{
   display: flex;
@@ -16,7 +16,7 @@ header{
   a{
     margin-left: 64px;
     font-size: 20px;
-    color: #FFFFFF;
+    color: $white;
   }
 }
 
@@ -29,12 +29,11 @@ header{
 @media (max-width:376px) {
   header{
     flex-direction: column;
-    justify-content: flex-start;
-    padding: 0 0;
     align-items: start;
-    img{
-      padding: 15px 16px;
-    }
+    padding: 0 0;
+  }
+  .header-img{
+    padding: 12px 15px;
   }
   .header-ul{
     justify-content: flex-start;
