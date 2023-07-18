@@ -27,11 +27,58 @@
   width: 104px;
   text-align: right;
 }
+.professionalServices{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #FBF2F2;
+  text-align: center;
+  h2{
+    color: $Secondary;
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 24px;
+  }
+  ul{
+    display: flex;
+    justify-content: space-between;
+  }
+  li{
+    width: 306px;
+  }
+  img{
+    width: 100px;
+    margin-bottom: 24px;
+  }
+  h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: $Secondary;
+    margin-bottom: 8px;
+  }
+  p{
+    text-align: left;
+  }
+}
 
 @media (max-width:768px) {
   .banner{
     padding: 296px 37px;
     background: url(/assets/images/home-header-sm.png) center / cover;
+  }
+  .professionalServices{
+    padding: 80px 36px;
+    ul{
+      flex-wrap: wrap;
+    }
+    li{
+      width: 336px;
+    }
+    li:nth-child(1),li:nth-child(2){
+      margin-bottom: 24px;
+    }
+    img{
+      margin-bottom: 16px;
+    }
   }
 }
 
@@ -49,5 +96,14 @@
     color: $white;
     padding: 6px 12px 5px 12px;
   }
+  }
+  .professionalServices{
+    padding: 40px 14px;
+    h2{
+       font-size: 24px;
+    }
+    li:nth-child(3){
+      margin-bottom: 24px;
+    }
   }
 }
