@@ -1,3 +1,25 @@
-.index-title {
-  font-size: 100px;
+$primary:#AA0601;
+$Secondary:#650300;
+$white:#fff;
+.banner{
+  background: url(/assets/images/home-header.png) center / cover;
+  padding-top: 296px;
+  padding-bottom: 296px;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  color: $Secondary;
+  h2{
+    font-size: 36px;
+  }
+  h1{
+    font-size: 64px;
+    margin-bottom: 4px;
+  }
+  a{
+    color: $white;
+    width: 104px;
+    padding: 6px 12px;
+    background-color: $primary;
+  }
 }
