@@ -1,5 +1,7 @@
 .banner {
   background: url(/assets/images/home-header.png) center / cover;
+}
+  .bannerStyle {
   padding-top: 296px;
   padding-bottom: 296px;
   display: flex;
@@ -84,7 +86,7 @@
     font-style: italic;
   }
 }
-.customerRecommendations {
+.collaborationDesign {
   background: url(/assets/images/index-bg.png) center / cover;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -123,11 +125,37 @@
     height: 240px;
   }
 }
+.customerRecommendations{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+  h2{
+    font-size: 48px;
+    color: $Secondary;
+    margin-bottom: 48px;
+  }
+  .cards{
+    display: flex;
+    justify-content: space-between;
+  }
+  .card{
+    max-width: 306px;
+    display: flex;
+    flex-direction: column;
+    text-align-last: left;
+    padding: 16px;
+    h3{
+      margin-bottom: 8px;
+    }
+  }
+}
 
 @media (max-width: 768px) {
-  .banner {
-    padding: 296px 37px;
+  .banner{
     background: url(/assets/images/home-header-sm.png) center / cover;
+  }
+  .bannerStyle {
+    padding: 296px 37px;
   }
   .professionalServices {
     padding: 80px 36px;
@@ -160,7 +188,7 @@
       margin-bottom: 0;
     }
   }
-  .customerRecommendations {
+  .collaborationDesign {
     padding: 80px 36px;
     ul {
       flex-direction: column;
@@ -172,7 +200,7 @@
 }
 
 @media (max-width: 376px) {
-  .banner {
+  .bannerStyle {
     padding: 144px 14px;
     h2 {
       font-size: 16px;
@@ -207,7 +235,7 @@
       margin-bottom: 8px;
     }
   }
-  .customerRecommendations {
+  .collaborationDesign {
     padding: 40px 14px;
     h2 {
       font-size: 24px;

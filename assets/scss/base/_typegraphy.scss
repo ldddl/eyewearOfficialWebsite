@@ -7,11 +7,16 @@ body {
   font-family: 'Noto Sans TC', 'Roboto', sans-serif;
   line-height: 1.5;
 }
-img {
-  vertical-align: middle;
+img{
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle; 
 }
 a {
   text-decoration: none;
+}
+a:hover {
+  opacity: 0.8;
 }
 .container {
   max-width: 1296px;
