@@ -15,8 +15,8 @@ header{
 .header-ul{
   display: flex;
   justify-content: space-between;
+  width: 492px;
   a{
-    margin-left: 64px;
     font-size: 20px;
     color: $white;
   }
@@ -25,6 +25,9 @@ header{
 @media (max-width:768px) {
   .header{
     padding: 16px 36px;    
+  }
+  .header-ul{
+    max-width: 492px;
   }
 }
 
@@ -40,7 +43,9 @@ header{
   .header-ul{
     justify-content: flex-start;
     flex-wrap: wrap;
+    width: 100%;
     li{
+      width: 50%;
       border: 1px solid #fff;
       align-items: center;
       display: flex;
@@ -48,12 +53,11 @@ header{
       justify-content: center;
     }
     a{
-      text-align: center;
-      width: 186px;
       margin-left: 0px;
       font-size: 16px;
       padding-top: 12px;
       padding-bottom: 12px;
+      text-align: center;
     }
   }
 }

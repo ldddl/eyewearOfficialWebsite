@@ -1,0 +1,144 @@
+.blog{
+  margin-top: 96px;
+  margin-bottom: 80px;
+  @include pad{
+    margin-top: 80px;
+  }
+  @include mobile{
+    margin-top: 40px;
+    margin-bottom: 64px;
+  }
+  h2{
+    font-size: 48px;
+    font-weight: 700;
+    border-left: 8px solid $primary;
+    padding-left: 16px;
+    margin-bottom: 32px;
+    @include pad{
+      margin-bottom: 40px;
+    }
+    @include mobile{
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+  }
+  li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    @include mobile{
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+  }
+  li:nth-child(5){
+    margin-bottom: 0px;
+  }
+  img,.blog-content{
+    width: 48.1818%;
+    @include pad{
+      width: calc(100% - 24px) / 2;
+    }
+    @include mobile{
+      width: 100%;
+    }
+  }
+  .blog-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .blog-margin{
+    margin-bottom: 124px;
+    @include pad{
+      margin-bottom: 80px;
+    }
+    @include mobile{
+      margin-bottom: 64px;
+    }
+  }
+  h3{
+    font-size: 32px;
+    color: $primary;
+  }
+  .blog-date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .p-en{
+    font-weight: 500;
+  }
+  .p-number{
+    opacity: 0.7;
+    @include mobile{
+      font-weight: 500;
+    }
+  }
+  .p-text{
+    @include pad{
+      max-width: 636px; /* 設定元素寬度 */
+      overflow: hidden; /* 隱藏超出元素寬度的部分文字 */
+      text-overflow: ellipsis; /* 在截斷點處顯示省略符號 */
+    }
+    @include mobile{
+      display: none;
+    }
+  }
+  h4{
+    font-size: 36px;
+    color: $Secondary;
+    font-weight: 900;
+    text-align: right;
+    @include pad{
+      font-weight: normal;
+      font-size: 16px;
+      color: #555555;
+    }
+    @include mobile{
+      display: none;
+    }
+  }
+  .pagination{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+    ul{
+      display: flex;
+    }
+    li{
+      border-left: 1px solid #555555;
+      border-top: 1px solid #555555;
+      border-bottom: 1px solid #555555;
+      margin-bottom: 0px;
+    }
+    a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .pagination-number{
+      width: 42px;
+      height: 48px;
+      padding: 12px 16px;
+      @include mobile{
+        width: 39px;
+        height: 45px;
+        padding: 12px 15px;
+      }
+    }
+    .pagination-style{
+      background-color: #F2F2F2;
+      padding: 11px 12px;
+      word-break: keep-all;
+      @include mobile{
+        height: 45px;
+        padding: 11px 12px;
+      }
+    }
+    .paginatio-border{
+      border-right: 1px solid #555555
+    }
+  }
+}

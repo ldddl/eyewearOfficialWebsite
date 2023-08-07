@@ -1,7 +1,7 @@
 .banner {
   background: url(/assets/images/home-header.png) center / cover;
 }
-  .bannerStyle {
+.bannerStyle {
   padding-top: 296px;
   padding-bottom: 296px;
   display: flex;
@@ -44,9 +44,6 @@
     display: flex;
     justify-content: space-between;
   }
-  li {
-    width: 306px;
-  }
   img {
     width: 100px;
     margin-bottom: 24px;
@@ -67,7 +64,11 @@
   text-align: center;
   ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+  }
+  li {
+    width: 31.5151%;
   }
   h2 {
     color: $Secondary;
@@ -76,7 +77,6 @@
     font-weight: 700;
   }
   img {
-    width: 416px;
     margin-bottom: 8px;
   }
   h3 {
@@ -108,13 +108,22 @@
   }
   ul {
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
   }
   img {
-    width: 100%;
     height: 240px;
   }
   li {
-    width: 100%;
+    width: 50%;
+    @include pad {
+      width: 100%;
+    }
+  }
+  li:nth-child(1) {
+    @include pad {
+      margin-bottom: 24px;
+    }
   }
   .home-section1 {
     background: url(/assets/images/home-section4-1.png) center / cover;
@@ -125,45 +134,187 @@
     height: 240px;
   }
 }
-.customerRecommendations{
+.customerRecommendations {
   padding-top: 80px;
   padding-bottom: 80px;
   text-align: center;
-  h2{
-    font-size: 48px;
-    color: $Secondary;
-    margin-bottom: 48px;
+  @include mobile {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
-  .cards{
+  h2 {
+    color: $Secondary;
+    font-size: 48px;
+    margin-bottom: 48px;
+    font-weight: 700;
+    @include mobile {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+  }
+  .cards {
     display: flex;
     justify-content: space-between;
+    @include pad {
+      flex-wrap: wrap;
+    }
   }
-  .card{
-    max-width: 306px;
+  .card {
     display: flex;
     flex-direction: column;
     text-align-last: left;
-    padding: 16px;
-    h3{
+    box-shadow: 0px 2px 6px #00000029;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    opacity: 1;
+    margin-right: 24px;
+    @include pad {
+      width: 48.2758%;
+      margin-right: 0px;
+    }
+    @include mobile {
+      width: 100%;
+    }
+    h3 {
       margin-bottom: 8px;
+    }
+    h4 {
+      font-weight: 400;
+    }
+  }
+  .card:nth-child(1),
+  .card:nth-child(2) {
+    @include pad {
+      margin-bottom: 24px;
+    }
+  }
+  .card:nth-child(3) {
+    @include mobile {
+      margin-bottom: 24px;
+    }
+  }
+  .card:nth-child(4) {
+    margin: 0;
+  }
+  .card-content {
+    padding: 16px;
+    text-align: left;
+  }
+  .card-text {
+    height: 72px;
+    margin-bottom: 48px;
+    @include pad {
+      height: 48px;
+      margin-bottom: 72px;
+    }
+  }
+  .card-date-style {
+    color: #707070;
+  }
+}
+.contact-us {
+  background-color: #fbf2f2;
+}
+.contact-content {
+  width: 48.1818%;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  @include mobile {
+    width: 75%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  @include mobile {
+    width: 92.8%;
+  }
+  h2 {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    color: $Secondary;
+    margin-bottom: 48px;
+    @include pad {
+      margin-bottom: 24px;
+    }
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+  p {
+    margin-bottom: 24px;
+    font-size: 20px;
+    @include pad {
+      font-size: 16px;
+    }
+  }
+
+  input {
+    width: 100%;
+    height: 36px;
+    border: 1px solid #000;
+    margin-bottom: 16px;
+    background-color: #fbf2f2;
+  }
+  input::placeholder {
+    padding: 6px 12px;
+    font-size: 16px;
+    opacity: 0.2;
+  }
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  .contact-input-more {
+    height: 136px;
+    padding-bottom: 106px;
+  }
+  .contact-check {
+    display: flex;
+    margin-bottom: 48px;
+    @include mobile {
+      margin-bottom: 24px;
+    }
+  }
+  .contact-input-check {
+    margin: 0px;
+    margin-right: 4px;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+  }
+  .contact-label-check {
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+  button {
+    width: 65.408%;
+    font-weight: 700;
+    color: $white;
+    background-color: $primary;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: block;
+    margin: 0 auto;
+    @include mobile {
+      width: 100%;
     }
   }
 }
 
 @media (max-width: 768px) {
-  .banner{
+  .banner {
     background: url(/assets/images/home-header-sm.png) center / cover;
   }
   .bannerStyle {
     padding: 296px 37px;
   }
   .professionalServices {
-    padding: 80px 36px;
     ul {
       flex-wrap: wrap;
     }
-    li {
-      width: 336px;
+    li{
+      width: calc((336px / 696px) * 100%);
     }
     li:nth-child(1),
     li:nth-child(2) {
@@ -178,23 +329,23 @@
       flex-direction: column;
     }
     img {
-      width: 336px;
+      width: calc((336px / 696px) * 100%);
       margin-bottom: 8px;
     }
     li {
+      width: 100%;
       margin-bottom: 24px;
     }
     li:nth-child(3) {
       margin-bottom: 0;
     }
+    h3 {
+      font-size: 36px;
+    }
   }
   .collaborationDesign {
-    padding: 80px 36px;
     ul {
-      flex-direction: column;
-    }
-    li:nth-child(1) {
-      margin-bottom: 24px;
+      display: flex;
     }
   }
 }
@@ -215,7 +366,14 @@
     }
   }
   .professionalServices {
-    padding: 40px 14px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    ul {
+      justify-content: center;
+    }
+    li{
+      width: 100%;
+    }
     h2 {
       font-size: 24px;
     }
@@ -226,6 +384,9 @@
   .classicSeries {
     padding-top: 40px;
     padding-bottom: 40px;
+    li:nth-child(2) {
+      margin: 0;
+    }
     h2 {
       font-size: 24px;
       margin-bottom: 24px;

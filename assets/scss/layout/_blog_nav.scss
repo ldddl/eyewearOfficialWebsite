@@ -1,0 +1,30 @@
+nav{
+  background-color: $Secondary;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  color: $white;
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  ul{
+    width: 36.666%;
+    display: flex;
+    justify-content: space-between;
+    @include pad{
+      width: 72.024%;
+    }
+  }
+  li{
+    font-size: 20px;
+  }
+  span{
+    color: $white;
+    width: 29.15px;
+    height: 29.15px;
+  }
+@include mobile{
+  display: none;
+}
+}
